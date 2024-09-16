@@ -1,0 +1,143 @@
+.home-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.create-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.product-card p {
+  color: #555;
+}
+
+.product-card .description {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+.loader {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 3px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
